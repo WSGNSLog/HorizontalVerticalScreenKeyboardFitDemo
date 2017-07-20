@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ViewControllerB.h
 //  TestDemo
 //
 //  Created by wsg on 16/3/4.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewControllerB : UIViewController
 
 @end
-

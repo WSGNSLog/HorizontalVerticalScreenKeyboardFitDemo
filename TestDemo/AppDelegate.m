@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  TestDemo
 //
-//  Created by 周传森 on 16/3/4.
-//  Copyright © 2016年 周传森. All rights reserved.
+//  Created by wsg on 16/3/4.
+//  Copyright © 2016年 wsg. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -41,5 +41,24 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    
+    
+    if (self.shouldChangeOrientation == YES) {
+        return UIInterfaceOrientationMaskLandscape;
+    }
+    else
+    {
+        return UIInterfaceOrientationMaskPortrait;
+    }
+    //    return UIInterfaceOrientationMaskAll;
+}
+
+//-(void)changeOrientations
+//{
+//    self.shouldChangeOrientation = YES;
+//}
+
 
 @end

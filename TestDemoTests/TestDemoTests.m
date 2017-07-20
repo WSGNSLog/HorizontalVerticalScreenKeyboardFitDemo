@@ -2,8 +2,8 @@
 //  TestDemoTests.m
 //  TestDemoTests
 //
-//  Created by 周传森 on 16/3/4.
-//  Copyright © 2016年 周传森. All rights reserved.
+//  Created by wsg on 16/3/4.
+//  Copyright © 2016年 wsg. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

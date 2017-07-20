@@ -15,6 +15,7 @@
 		39CB59251C898FB100BC65DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CB59231C898FB100BC65DA /* LaunchScreen.storyboard */; };
 		39CB59301C898FB100BC65DA /* TestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CB592F1C898FB100BC65DA /* TestDemoTests.m */; };
 		39CB593B1C898FB100BC65DA /* TestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CB593A1C898FB100BC65DA /* TestDemoUITests.m */; };
+		39CB594A1C8990B200BC65DA /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CB59491C8990B200BC65DA /* ViewControllerB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		39CB59361C898FB100BC65DA /* TestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CB593A1C898FB100BC65DA /* TestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDemoUITests.m; sourceTree = "<group>"; };
 		39CB593C1C898FB200BC65DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39CB59481C8990B200BC65DA /* ViewControllerB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
+		39CB59491C8990B200BC65DA /* ViewControllerB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				39CB59191C898FB100BC65DA /* AppDelegate.m */,
 				39CB591B1C898FB100BC65DA /* ViewController.h */,
 				39CB591C1C898FB100BC65DA /* ViewController.m */,
+				39CB59481C8990B200BC65DA /* ViewControllerB.h */,
+				39CB59491C8990B200BC65DA /* ViewControllerB.m */,
 				39CB591E1C898FB100BC65DA /* Main.storyboard */,
 				39CB59211C898FB100BC65DA /* Assets.xcassets */,
 				39CB59231C898FB100BC65DA /* LaunchScreen.storyboard */,
@@ -207,6 +212,8 @@
 				TargetAttributes = {
 					39CB59111C898FB100BC65DA = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 3MBF9B5ZRL;
+						ProvisioningStyle = Automatic;
 					};
 					39CB592A1C898FB100BC65DA = {
 						CreatedOnToolsVersion = 7.0;
@@ -271,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39CB591D1C898FB100BC65DA /* ViewController.m in Sources */,
+				39CB594A1C8990B200BC65DA /* ViewControllerB.m in Sources */,
 				39CB591A1C898FB100BC65DA /* AppDelegate.m in Sources */,
 				39CB59171C898FB100BC65DA /* main.m in Sources */,
 			);
@@ -411,10 +419,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3MBF9B5ZRL;
 				INFOPLIST_FILE = TestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---.TestDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = ww.wsg.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +434,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3MBF9B5ZRL;
 				INFOPLIST_FILE = TestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---.TestDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = ww.wsg.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -496,6 +512,7 @@
 				39CB59411C898FB200BC65DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39CB59421C898FB200BC65DA /* Build configuration list for PBXNativeTarget "TestDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +521,7 @@
 				39CB59441C898FB200BC65DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39CB59451C898FB200BC65DA /* Build configuration list for PBXNativeTarget "TestDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +530,7 @@
 				39CB59471C898FB200BC65DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
